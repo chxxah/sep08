@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.movie.web.mselect.MselectDAO">
+
+	<select id="movie" resultType="Map">
+		SELECT mv_name
+		FROM movie_info
+	</select>
+	
+	<select id="theater" resultType="Map">
+		SELECT DISTINCT th_area
+		FROM theater_info
+	</select>
+	
+	<select id="city" parameterType="String" resultType="Map">
+		SELECT th_city
+		FROM theater_info
+		WHERE th_area = #{area}
+	</select>
+
+
+</mapper>
