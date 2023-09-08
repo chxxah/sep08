@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* 영화 선택 */
+.mselect {
+	width: 1000px;
+	height: 700px;
+}
+
+.select_movie {
+	background-color: gray;
+	height: 700px;
+	width: 25%;
+	float: left;
+}
+
+.select_title {
+	height: 30px;
+	background-color: green;
+}
+
+.select_content {
+	height: 670px;
+	background-color: red;
+}
+
+.movie_all {
+	background-color: yellow;
+	height: 25px;
+}
+
+.movie_list {
+	height: 400px;
+	background-color: gray;
+}
+
+.movie_selected {
+	height: 200px;
+	background-color: blue;
+}
+
+.selected_poster {
+	width: 30%;
+	height: 100%;
+	background-color: pink;
+	float: left;
+}
+
+.selected_info {
+	width: 70%;
+	height: 100%;
+	background-color: blue;
+	float: left;
+}
+
+/* 극장 선택 */
+.select_theater{
+	background-color: gray;
+	height: 700px;
+	width: 25%;
+	float: left;
+}
+
+.theater_all, .theater_special {
+	width: 50%;
+	float: left;
+	background-color: yellow;
+	height: 25px;
+}
+
+.theater_list {
+	width: 50%;
+	clear: both;
+	height: 400px;
+	float: left;
+	background-color: blue;
+}
+
+.theater_special_list {
+	width: 50%;
+	height: 400px;
+	float: left;
+	background-color: green;
+}
+
+.theater_selected {
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background-color: pink;
+}
+

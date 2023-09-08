@@ -13,7 +13,7 @@
 	</select>
 	
 	<select id="city" parameterType="String" resultType="Map">
-		SELECT th_city
+		SELECT DISTINCT th_city
 		FROM theater_info
 		WHERE th_area = #{area}
 	</select>
