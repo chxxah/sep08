@@ -19,8 +19,28 @@ public class MselectService {
 		return mselectDAO.theater();
 	}
 
-	public List<Map<String, Object>> city(String area) {
-		return mselectDAO.city(area);
+	public Map<String, Object> selmovielist(String selmovie) {
+		return mselectDAO.selmovielist(selmovie);
+	}
+	
+	public List<Map<String, Object>> selcitylist(String selarea) {
+		return mselectDAO.selcitylist(selarea);
 	}
 
+	public List<Map<String, Object>> imaxlist(String selimax) {
+		return mselectDAO.imaxlist(selimax);
+	}
+
+	public String selspecial(String selectimax) {
+		return mselectDAO.selspecial(selectimax);
+	}
+
+	public List<Map<String, Object>> movietime(Map<String, Object> map) {
+		return mselectDAO.movietime(map);
+	}
+
+	public List<Map<String, Object>> specialtime(Map<String, Object> map) {
+		return mselectDAO.specialtime(map);
+	}
+	
 }

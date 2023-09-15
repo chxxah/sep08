@@ -12,6 +12,16 @@ public interface MselectDAO {
 
 	List<Map<String, Object>> theater();
 
-	List<Map<String, Object>> city(String area);
+	Map<String, Object> selmovielist(String selmovie);
+
+	List<Map<String, Object>> selcitylist(String selarea);
+
+	List<Map<String, Object>> imaxlist(String selimax);
+
+	String selspecial(String selectimax);
+
+	List<Map<String, Object>> movietime(Map<String, Object> map);
+
+	List<Map<String, Object>> specialtime(Map<String, Object> map);
 
 }
